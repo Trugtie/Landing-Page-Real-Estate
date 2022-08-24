@@ -1,0 +1,45 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+$main-font: "Roboto", sans-serif;
+$main-font-color: black;
+$second-font-color: white;
+$main-color: white;
+$second-color: #1f4468;
+
+html {
+  font-size: 10px;
+}
+
+body {
+  color: $main-font-color;
+  font-family: $main-font;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  height: 8.1rem;
+  background-color: $second-color;
+  color: $second-font-color;
+}
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+  align-items: center;
+  flex-basis: 86.7rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.nav-toggle {
+}
