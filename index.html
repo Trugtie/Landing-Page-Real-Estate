@@ -14,30 +14,104 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
   </head>
   <body>
+    <!-- Nav -->
     <header>
       <div class="container-fluid p-0">
-        <nav class="nav-container">
-          <div class="logo">
+        <nav
+          class="nav-container sticky-top d-flex align-content-center justify-content-between"
+        >
+          <div
+            class="logo d-flex align-items-center justify-content-center flex-grow-1"
+          >
             <img src="https://via.placeholder.com/92x66" alt="logoimg" />
           </div>
-          <ul class="nav-list">
-            <li><a href="" class="nav-link">GIỚI THIỆU</a></li>
-            <li><a href="" class="nav-link">VỊ TRÍ</a></li>
-            <li><a href="" class="nav-link">TIỆN ÍCH</a></li>
-            <li><a href="" class="nav-link">TIN TỨC</a></li>
-            <li><a href="" class="nav-link">LIÊN HỆ</a></li>
-            <li><a href="" class="nav-link">VỀ CHÚNG TÔI</a></li>
+          <ul
+            class="nav-list list-unstyled d-flex align-items-center flex-grow-1 m-0"
+          >
+            <li><a href="#" class="nav-link nav-active">GIỚI THIỆU</a></li>
+            <li><a href="#" class="nav-link">VỊ TRÍ</a></li>
+            <li><a href="#" class="nav-link">TIỆN ÍCH</a></li>
+            <li><a href="#" class="nav-link">TIN TỨC</a></li>
+            <li><a href="#" class="nav-link">LIÊN HỆ</a></li>
+            <li><a href="#" class="nav-link">VỀ CHÚNG TÔI</a></li>
           </ul>
           <div class="nav-toggle"></div>
         </nav>
       </div>
     </header>
+    <!-- hero section -->
+    <section class="hero">
+      <div
+        class="container-fluid p-0 d-flex flex-column align-items-center justify-content-center hero-container"
+      >
+        <h1 class="hero-main-title">SUNSHINE CITY SAIGON</h1>
+        <h2 class="hero-sub-title">Tinh hoa Châu Âu – Khởi đầu thịnh vượng</h2>
+      </div>
+    </section>
+    <!-- intro -->
+    <section class="intro">
+      <div class="container d-flex justify-content-between align-items-center">
+        <div class="intro-description me-5">
+          <h1 class="intro-title">GIỚI THIỆU</h1>
+          <p class="intro-words">
+            Lấy cảm hứng từ những thành phố thịnh vượng châu Âu, Sunshine City
+            Sài Gòn tiếp nối thành công của Sunshine City Hà Nội ở phía Bắc, trở
+            thành biểu tượng thượng lưu ở phía Nam.
+          </p>
+        </div>
+        <div class="intro-img">
+          <img src="./assets/intro-img.png" alt="itro img" />
+        </div>
+      </div>
+    </section>
+    <!-- divider -->
+    <section class="divider">
+      <div
+        class="container-fluid d-flex justify-content-center align-items-center divider-container"
+      >
+        <h1 class="m-0 divider-title">HEADING</h1>
+      </div>
+    </section>
+    <!-- locate -->
+    <section class="locate">
+      <div
+        class="container d-flex justify-content-between align-items-center flex-row-reverse"
+      >
+        <div class="locate-description ms-5">
+          <h1 class="locate-title text-center">VỊ TRÍ</h1>
+          <h2 class="locate-sub-title text-center">TRUNG TÂM ĐẮT GIÁ</h2>
+          <p class="locate-words">
+            Sunshine City Sài Gòn tọa lạc tại Quận 7 – một trong số những quận
+            trung tâm và có tốc độ phát triển nhanh nhất của TP. Hồ Chí Minh.
+          </p>
+          <p class="locate-words">
+            Dự án có vị trí đắc địa nhìn ra dòng sông Cả Cấm hiền hòa, thuận
+            tiện kết nối vào trung tâm thông qua hệ thống cầu đường hiện đại bắc
+            qua những kênh rạch tự nhiên của thành phố.
+          </p>
+          <p class="locate-words">
+            Liền kề Khu đô thị Phú Mỹ Hưng, vùng lõi huyết mạch của Quận 7,
+            Sunshine City Sài Gòn được thừa hưởng toàn bộ tiện ích của khu vực
+            với những bệnh viện, trường học hàng đầu, bên cạnh đó là các điểm
+            giải trí đẳng cấp phục vụ cuộc sống thượng lưu.
+          </p>
+        </div>
+        <div class="intro-img">
+          <img src="./assets/locate-img.png" alt="itro img" />
+        </div>
+      </div>
+    </section>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   </body>
 </html>

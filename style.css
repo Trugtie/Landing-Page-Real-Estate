@@ -10773,25 +10773,141 @@ a {
 }
 
 .nav-container {
-  display: flex;
-  justify-content: space-between;
   height: 8.1rem;
   background-color: #1f4468;
   color: white;
+  position: fixed;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.nav-list {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
+.nav-link {
   font-size: 2rem;
-  align-items: center;
-  flex-basis: 86.7rem;
+  margin-right: 6.3rem;
+  position: relative;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-link::after {
+  content: " ";
+  height: 1px;
+  background-color: white;
+  width: 0%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: all 0.3s;
+}
+
+.nav-active::after {
+  content: " ";
+  height: 1px;
+  background-color: white;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.hero-container {
+  color: white;
+  height: 100vh;
+  background: url(../assets/hero-bg.png) center no-repeat;
+  background-size: cover;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 0 0 2000px inset;
+}
+
+.hero-main-title {
+  font-size: 4rem;
+  margin-bottom: 2.8rem;
+}
+
+.hero-sub-title {
+  font-size: 3.2rem;
+}
+
+.intro {
+  padding: 11.3rem 0rem;
+}
+
+.intro-title {
+  font-size: 4rem;
+  margin-bottom: 11.2rem;
+  font-weight: bold;
+}
+
+.intro-description {
+  font-size: 4rem;
+  text-align: left;
+  flex-basis: 50%;
+}
+
+.intro-img {
+  flex-basis: 50%;
+}
+
+.intro-img img {
+  width: 100%;
+  border-radius: 3rem;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.divider-container {
+  height: 35.4rem;
+  background: url(../assets/divider1.png) center no-repeat;
+  background-size: cover;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 0 0 2000px inset;
+}
+
+.divider-title {
+  font-size: 3.2rem;
+}
+
+.locate {
+  padding: 11.3rem 0rem;
+}
+
+.locate-description {
+  font-size: 2.28rem;
+  flex-basis: 50%;
+}
+
+.locate-title {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.locate-sub-title {
+  font-size: 3rem;
+  margin-bottom: 4rem;
+}
+
+@keyframes changeBgHero {
+  0% {
+    background: url(../assets/hero-bg.png) center no-repeat;
+    background-size: cover;
+  }
+  25% {
+    background: url(https://c1.wallpaperflare.com/path/873/892/1024/the-city-ho-chi-minh-the-street-vietnam-3f479187f0d1e8288c8becb48fe332bd.jpg) center no-repeat;
+    background-size: cover;
+  }
+  50% {
+    background: url(https://c1.wallpaperflare.com/path/421/475/679/saigon-street-vietnam-asia-90dbe7c6fd8840c367c90806f73c4003.jpg) center no-repeat;
+    background-size: cover;
+  }
+  75% {
+    background: url(https://c1.wallpaperflare.com/path/1019/741/89/the-city-ho-chi-minh-the-street-vietnam-7f67f1a7c071d8f86ccb2c246f73e25d.jpg) center no-repeat;
+    background-size: cover;
+  }
+  100% {
+    background: url(https://r4.wallpaperflare.com/wallpaper/790/573/237/cities-ho-chi-minh-city-saigon-river-vietnam-wallpaper-147e32f3b5fe0553c10bab9562b941d9.jpg) center no-repeat;
+    background-size: cover;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
