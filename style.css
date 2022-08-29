@@ -10863,6 +10863,10 @@ a {
   box-shadow: rgba(0, 0, 0, 0.5) 0 0 0 2000px inset;
 }
 
+.divider-2 {
+  background: url(../assets/divider2.png) center no-repeat;
+}
+
 .divider-title {
   font-size: 3.2rem;
 }
@@ -10885,6 +10889,52 @@ a {
 .locate-sub-title {
   font-size: 3rem;
   margin-bottom: 4rem;
+}
+
+.locate-list-icon {
+  margin-top: 5.9rem;
+}
+
+.locate-grid .col {
+  background-color: black;
+  padding: 1.2rem 1.3rem;
+  font-size: 2.5rem;
+  color: white;
+  display: flex;
+  font-weight: bold;
+  align-items: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.locate-grid .col img {
+  margin-right: 3rem;
+}
+.locate-grid .col ul {
+  font-size: 2rem;
+}
+
+.city-icon {
+  background-image: linear-gradient(-45deg, #56ccf2, #2f80ed);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.park-icon {
+  background-image: linear-gradient(-45deg, #dce35b, #45b649);
+}
+
+.hospital-icon {
+  background-image: linear-gradient(-45deg, #ee0979, #ff6a00);
+}
+
+.university-icon {
+  background-image: linear-gradient(-45deg, #2bc0e4, #86a8e7, #91eae4);
+}
+
+.airport-icon {
+  background-image: linear-gradient(-45deg, #ff9966, #ff5e62);
+}
+
+.bar-icon {
+  background-image: linear-gradient(-45deg, #4568dc, #b06ab3);
 }
 
 @keyframes changeBgHero {
