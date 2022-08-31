@@ -10867,6 +10867,10 @@ a {
   background: url(../assets/divider2.png) center no-repeat;
 }
 
+.divider-3 {
+  background: url(../assets/divider3.png) center no-repeat;
+}
+
 .divider-title {
   font-size: 3.2rem;
 }
@@ -10935,6 +10939,173 @@ a {
 
 .bar-icon {
   background-image: linear-gradient(-45deg, #4568dc, #b06ab3);
+}
+
+.priceImg-container {
+  flex-basis: 50%;
+}
+
+.price-content {
+  flex-basis: 50%;
+}
+
+.mySwiper {
+  max-width: 950px;
+  max-height: 672px;
+}
+
+.mySwiper2 {
+  height: 750px !important;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide-2 {
+  flex-direction: column;
+  margin-right: 1rem;
+}
+.swiper-slide-2 .row .col {
+  padding: 0;
+  margin: 0.5rem;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.price-section {
+  padding: 10rem 0rem;
+}
+
+.price-header {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.price-parapharph {
+  font-size: 2.5rem;
+}
+
+.price-content {
+  padding: 0rem 2.5rem;
+}
+
+.price-list {
+  font-size: 2.5rem;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: black !important;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 30px !important;
+  opacity: 0.5;
+}
+
+.contact-container {
+  background-color: #1f4468;
+  color: white;
+}
+
+.contact-map {
+  flex-basis: 50%;
+  padding: 0rem 5rem;
+}
+
+.contact-form {
+  flex-basis: 50%;
+}
+
+.contact-header {
+  font-size: 4rem;
+  margin-bottom: 4.5rem;
+}
+
+.contact-line {
+  display: flex;
+  align-items: center;
+  font-size: 3rem;
+  margin-bottom: 1.7rem;
+}
+.contact-line img {
+  margin-right: 1.4rem;
+}
+
+.form-title {
+  font-size: 3.2rem;
+  margin-bottom: 2.5rem;
+}
+
+.form {
+  color: black;
+}
+.form h2, .form .h2 {
+  color: white;
+}
+.form input {
+  width: 60rem;
+  font-size: 2rem;
+  height: 50px !important;
+}
+
+.form-floating label {
+  font-size: 2rem;
+  opacity: 0.5;
+}
+
+.form-control:not(:placeholder-shown) ~ label {
+  transform: scale(0.85) translateY(-1.25rem) translateX(0.15rem) !important;
+}
+
+.form-control:focus ~ label {
+  transform: scale(0.85) translateY(-1.25rem) translateX(0.15rem) !important;
+}
+
+.form-btn {
+  padding: 12px 52px;
+  border: none;
+  background-color: #0d1c2c;
+  color: white;
+  font-size: 1.5rem;
+  transition: all 0.3s;
+}
+.form-btn:hover {
+  background-color: #070e16;
+}
+
+footer div {
+  padding: 2.4rem 0rem;
+  color: white;
+  background-color: #050b11;
+  font-size: 2.5rem;
 }
 
 @keyframes changeBgHero {
