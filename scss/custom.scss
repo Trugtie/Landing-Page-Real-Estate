@@ -14,6 +14,7 @@ html {
 body {
   color: $main-font-color;
   font-family: $main-font;
+  overflow-x: hidden;
 }
 
 a {
@@ -63,7 +64,9 @@ a {
 .hero-container {
   color: $second-font-color;
   height: 100vh;
-  background: url(../assets/hero-bg.png) center no-repeat;
+  transition: background 1s linear;
+  background: url(https://r4.wallpaperflare.com/wallpaper/537/207/609/architecture-bridge-river-aerial-view-wallpaper-f6c635a751af434ae6072e3ee345802c.jpg)
+    center no-repeat;
   background-size: cover;
   box-shadow: rgba(0, 0, 0, 0.5) 0 0 0 2000px inset;
 }
@@ -239,6 +242,12 @@ a {
     .col {
       padding: 0;
       margin: 0.5rem;
+      img {
+        transition: all 0.3s;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
     }
   }
 }
@@ -353,12 +362,28 @@ a {
   }
 }
 
-footer{
-  div{
+footer {
+  div {
     padding: 2.4rem 0rem;
-    color:white;
+    color: white;
     background-color: #050b11;
     font-size: 2.5rem;
+  }
+}
+
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  padding: 1rem 1.5rem;
+  background-color: #071f3d;
+  border: none;
+  &:hover {
+    background-color: #041120;
+  }
+  &:focus {
+    border: none;
   }
 }
 

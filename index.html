@@ -18,10 +18,25 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <!-- Nav -->
     <header>
+      <button
+        type="button"
+        class="btn btn-danger btn-floating btn-lg"
+        id="btn-back-to-top"
+      >
+        <i class="fa-sharp fa-solid fa-arrow-up"></i>
+      </button>
       <div class="container-fluid p-0">
         <nav
           class="nav-container sticky-top d-flex align-content-center justify-content-between"
@@ -34,12 +49,14 @@
           <ul
             class="nav-list list-unstyled d-flex align-items-center flex-grow-1 m-0"
           >
-            <li><a href="#" class="nav-link nav-active">GIỚI THIỆU</a></li>
-            <li><a href="#" class="nav-link">VỊ TRÍ</a></li>
-            <li><a href="#" class="nav-link">TIỆN ÍCH</a></li>
-            <li><a href="#" class="nav-link">TIN TỨC</a></li>
-            <li><a href="#" class="nav-link">LIÊN HỆ</a></li>
-            <li><a href="#" class="nav-link">VỀ CHÚNG TÔI</a></li>
+            <li>
+              <a href="#introduce" class="nav-link nav-active">GIỚI THIỆU</a>
+            </li>
+            <li><a href="#locate" class="nav-link">VỊ TRÍ</a></li>
+            <li><a href="#price" class="nav-link">TIỆN ÍCH</a></li>
+            <li><a href="#image" class="nav-link">HÌNH ẢNH</a></li>
+            <li><a href="#contact" class="nav-link">LIÊN HỆ</a></li>
+            <li><a href="#about" class="nav-link">VỀ CHÚNG TÔI</a></li>
           </ul>
           <div class="nav-toggle"></div>
         </nav>
@@ -50,22 +67,52 @@
       <div
         class="container-fluid p-0 d-flex flex-column align-items-center justify-content-center hero-container"
       >
-        <h1 class="hero-main-title">SUNSHINE CITY SAIGON</h1>
-        <h2 class="hero-sub-title">Tinh hoa Châu Âu – Khởi đầu thịnh vượng</h2>
+        <h1
+          class="hero-main-title"
+          data-aos="fade-right"
+          data-aos-duration="1300"
+        >
+          SUNSHINE CITY SAIGON
+        </h1>
+        <h2
+          class="hero-sub-title"
+          data-aos="fade-left"
+          data-aos-duration="1300"
+          data-aos-delay="500"
+        >
+          Tinh hoa Châu Âu – Khởi đầu thịnh vượng
+        </h2>
       </div>
     </section>
     <!-- intro -->
     <section class="intro">
       <div class="container d-flex justify-content-between align-items-center">
         <div class="intro-description me-5">
-          <h1 class="intro-title">GIỚI THIỆU</h1>
-          <p class="intro-words">
+          <h1
+            class="intro-title"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            id="introduce"
+          >
+            GIỚI THIỆU
+          </h1>
+          <p
+            class="intro-words"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-delay="800"
+          >
             Lấy cảm hứng từ những thành phố thịnh vượng châu Âu, Sunshine City
             Sài Gòn tiếp nối thành công của Sunshine City Hà Nội ở phía Bắc, trở
             thành biểu tượng thượng lưu ở phía Nam.
           </p>
         </div>
-        <div class="intro-img">
+        <div
+          class="intro-img"
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          data-aos-delay="500"
+        >
           <img src="./assets/intro-img.png" alt="itro img" />
         </div>
       </div>
@@ -75,7 +122,7 @@
       <div
         class="container-fluid d-flex justify-content-center align-items-center divider-container"
       >
-        <h1 class="m-0 divider-title">HEADING</h1>
+        <h1 class="m-0 divider-title" data-aos="fade">HEADING</h1>
       </div>
     </section>
     <!-- locate -->
@@ -84,51 +131,120 @@
         class="container d-flex justify-content-between align-items-center flex-row-reverse"
       >
         <div class="locate-description ms-5">
-          <h1 class="locate-title text-center">VỊ TRÍ</h1>
-          <h2 class="locate-sub-title text-center">TRUNG TÂM ĐẮT GIÁ</h2>
-          <p class="locate-words">
+          <h1
+            class="locate-title text-center"
+            data-aos="fade-left"
+            data-aos-duration="1300"
+            id="locate"
+          >
+            VỊ TRÍ
+          </h1>
+          <h2
+            class="locate-sub-title text-center"
+            data-aos="fade-up"
+            data-aos-duration="1300"
+            data-aos-delay="500"
+          >
+            TRUNG TÂM ĐẮT GIÁ
+          </h2>
+          <p
+            class="locate-words"
+            data-aos="fade-left"
+            data-aos-duration="1300"
+            data-aos-delay="1000"
+          >
             Sunshine City Sài Gòn tọa lạc tại Quận 7 – một trong số những quận
             trung tâm và có tốc độ phát triển nhanh nhất của TP. Hồ Chí Minh.
           </p>
-          <p class="locate-words">
+          <p
+            class="locate-words"
+            data-aos="fade-left"
+            data-aos-duration="1300"
+            data-aos-delay="1200"
+          >
             Dự án có vị trí đắc địa nhìn ra dòng sông Cả Cấm hiền hòa, thuận
             tiện kết nối vào trung tâm thông qua hệ thống cầu đường hiện đại bắc
             qua những kênh rạch tự nhiên của thành phố.
           </p>
-          <p class="locate-words">
+          <p
+            class="locate-words"
+            data-aos="fade-left"
+            data-aos-duration="1300"
+            data-aos-delay="1400"
+          >
             Liền kề Khu đô thị Phú Mỹ Hưng, vùng lõi huyết mạch của Quận 7,
             Sunshine City Sài Gòn được thừa hưởng toàn bộ tiện ích của khu vực
             với những bệnh viện, trường học hàng đầu, bên cạnh đó là các điểm
             giải trí đẳng cấp phục vụ cuộc sống thượng lưu.
           </p>
         </div>
-        <div class="intro-img">
+        <div
+          class="intro-img"
+          data-aos="zoom-in"
+          data-aos-duration="1300"
+          data-aos-delay="800"
+        >
           <img src="./assets/locate-img.png" alt="itro img" />
         </div>
       </div>
       <div class="container locate-list-icon">
         <div class="row text-center locate-grid">
-          <div class="col city-icon me-4">
+          <div
+            class="col city-icon me-4"
+            data-aos="fade-down"
+            data-aos-duration="1300"
+            data-aos-delay="1000"
+          >
             <img src="./assets/city-icon.svg" alt="" /> 1 phút
           </div>
-          <div class="col park-icon me-4">
+          <div
+            class="col park-icon me-4"
+            data-aos="fade-down"
+            data-aos-duration="1300"
+            data-aos-delay="1400"
+          >
             <img src="./assets/park-icon.svg" alt="" /> 1 phút
           </div>
-          <div class="col hospital-icon me-4">
+          <div
+            class="col hospital-icon me-4"
+            data-aos="fade-down"
+            data-aos-duration="1300"
+            data-aos-delay="1800"
+          >
             <img src="./assets/hospital-icon.svg" alt="" /> 1 phút
           </div>
-          <div class="col university-icon me-4">
+          <div
+            class="col university-icon me-4"
+            data-aos="fade-down"
+            data-aos-duration="1300"
+            data-aos-delay="2200"
+          >
             <img src="./assets/university-icon.svg" alt="" /> 1 phút
           </div>
-          <div class="col airport-icon me-4">
+          <div
+            class="col airport-icon me-4"
+            data-aos="fade-down"
+            data-aos-duration="1300"
+            data-aos-delay="2600"
+          >
             <img src="./assets/airport-icon.svg" alt="" /> 1 phút
           </div>
-          <div class="col bar-icon">
+          <div
+            class="col bar-icon"
+            data-aos="fade-down"
+            data-aos-duration="1300"
+            data-aos-delay="3000"
+          >
             <img src="./assets/bar-icon.svg" alt="" /> 1 phút
           </div>
         </div>
         <div class="row locate-grid locate-grid--ul">
-          <div class="col city-icon me-4">
+          <div
+            class="col city-icon me-4"
+            data-aos="fade-down"
+            data-aos-duration="1300"
+            data-aos-delay="1000"
+          >
             <ul>
               <li>Trung tâm tài chính Phú Mỹ Hưng</li>
               <li>Trung tâm tài chính Phú Mỹ Hưng</li>
@@ -136,7 +252,12 @@
               <li>Trung tâm tài chính Phú Mỹ Hưng</li>
             </ul>
           </div>
-          <div class="col park-icon me-4">
+          <div
+            class="col park-icon me-4"
+            data-aos="fade-down"
+            data-aos-duration="1300"
+            data-aos-delay="1400"
+          >
             <ul>
               <li>Trung tâm tài chính Phú Mỹ Hưng</li>
               <li>Trung tâm tài chính Phú Mỹ Hưng</li>
@@ -144,7 +265,12 @@
               <li>Trung tâm tài chính Phú Mỹ Hưng</li>
             </ul>
           </div>
-          <div class="col hospital-icon me-4">
+          <div
+            class="col hospital-icon me-4"
+            data-aos="fade-down"
+            data-aos-duration="1300"
+            data-aos-delay="1800"
+          >
             <ul>
               <li>Trung tâm tài chính Phú Mỹ Hưng</li>
               <li>Trung tâm tài chính Phú Mỹ Hưng</li>
@@ -152,7 +278,12 @@
               <li>Trung tâm tài chính Phú Mỹ Hưng</li>
             </ul>
           </div>
-          <div class="col university-icon me-4">
+          <div
+            class="col university-icon me-4"
+            data-aos="fade-down"
+            data-aos-duration="1300"
+            data-aos-delay="2200"
+          >
             <ul>
               <li>Trung tâm tài chính Phú Mỹ Hưng</li>
               <li>Trung tâm tài chính Phú Mỹ Hưng</li>
@@ -160,7 +291,12 @@
               <li>Trung tâm tài chính Phú Mỹ Hưng</li>
             </ul>
           </div>
-          <div class="col airport-icon me-4">
+          <div
+            class="col airport-icon me-4"
+            data-aos="fade-down"
+            data-aos-duration="1300"
+            data-aos-delay="2600"
+          >
             <ul>
               <li>Trung tâm tài chính Phú Mỹ Hưng</li>
               <li>Trung tâm tài chính Phú Mỹ Hưng</li>
@@ -168,7 +304,12 @@
               <li>Trung tâm tài chính Phú Mỹ Hưng</li>
             </ul>
           </div>
-          <div class="col bar-icon">
+          <div
+            class="col bar-icon"
+            data-aos="fade-down"
+            data-aos-duration="1300"
+            data-aos-delay="3000"
+          >
             <ul>
               <li>Trung tâm tài chính Phú Mỹ Hưng</li>
               <li>Trung tâm tài chính Phú Mỹ Hưng</li>
@@ -184,13 +325,20 @@
       <div
         class="container-fluid d-flex justify-content-center align-items-center divider-container divider-2"
       >
-        <h1 class="m-0 divider-title">HEADING</h1>
+        <h1 class="m-0 divider-title" data-aos="fade" data-aos-duration="1300">
+          HEADING
+        </h1>
       </div>
     </section>
     <!-- price -->
     <section>
       <div class="container-fluid d-flex justify-content-between price-section">
-        <div class="priceImg-container">
+        <div
+          class="priceImg-container"
+          data-aos="fade-right"
+          data-aos-duration="1300"
+          data-aos-delay="1000"
+        >
           <div class="swiper mySwiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
@@ -217,8 +365,20 @@
           </div>
         </div>
         <div class="price-content">
-          <h1 class="price-header mb-5">CHUỖI TIỆN ÍCH ĐỈNH CAO</h1>
-          <p class="price-parapharph mb-5">
+          <h1
+            class="price-header mb-5"
+            data-aos="fade-left"
+            data-aos-duration="1300"
+            id="price"
+          >
+            CHUỖI TIỆN ÍCH ĐỈNH CAO
+          </h1>
+          <p
+            class="price-parapharph mb-5"
+            data-aos="fade-left"
+            data-aos-duration="1300"
+            data-aos-delay="1000"
+          >
             Với diện tích lớn dành cho không gian cảnh quan và tiện ích,
             Sunshine City Sài Gòn là xứ sở của cuộc sống hiện đại, dẫn dầu xu
             hướng tương lai. Dịch vụ chuẩn 5 sao quốc tế cùng hệ thống quản lý –
@@ -227,7 +387,12 @@
           </p>
           <div class="row">
             <div class="col">
-              <ul class="price-list">
+              <ul
+                class="price-list"
+                data-aos="fade-left"
+                data-aos-duration="1300"
+                data-aos-delay="1400"
+              >
                 <li>Sân chơi thể thao đa năng</li>
                 <li>Hồ cảnh quan</li>
                 <li>Sảnh lounge đón khách</li>
@@ -240,7 +405,12 @@
               </ul>
             </div>
             <div class="col">
-              <ul class="price-list">
+              <ul
+                class="price-list"
+                data-aos="fade-left"
+                data-aos-duration="1300"
+                data-aos-delay="1800"
+              >
                 <li>Sân chơi thể thao đa năng</li>
                 <li>Hồ cảnh quan</li>
                 <li>Sảnh lounge đón khách</li>
@@ -261,14 +431,28 @@
       <div
         class="container-fluid d-flex justify-content-center align-items-center divider-container divider-3"
       >
-        <h1 class="m-0 divider-title">HEADING</h1>
+        <h1 class="m-0 divider-title" data-aos="fade" data-aos-duration="1300">
+          HEADING
+        </h1>
       </div>
     </section>
     <!-- image gallery -->
     <section>
       <div class="container py-5">
-        <h1 class="text-center">HÌNH ẢNH</h1>
-        <div class="swiper mySwiper2">
+        <h1
+          class="text-center"
+          data-aos="fade-down"
+          data-aos-duration="1300"
+          id="image"
+        >
+          HÌNH ẢNH
+        </h1>
+        <div
+          class="swiper mySwiper2"
+          data-aos="fade"
+          data-aos-duration="1300"
+          data-aos-delay="1000"
+        >
           <div class="swiper-wrapper">
             <div class="swiper-slide swiper-slide-2">
               <div class="row">
@@ -403,9 +587,21 @@
     <!-- contact -->
     <section>
       <div class="container-fluid contact-container py-5">
-        <h1 class="contact-header text-center">LIÊN HỆ</h1>
+        <h1
+          class="contact-header text-center"
+          data-aos="fade-down"
+          data-aos-duration="1300"
+          id="contact"
+        >
+          LIÊN HỆ
+        </h1>
         <div class="contact-content d-flex justify-content-between">
-          <div class="contact-map d-flex justify-content-center">
+          <div
+            class="contact-map d-flex justify-content-center"
+            data-aos="fade-right"
+            data-aos-duration="1300"
+            data-aos-delay="1000"
+          >
             <div class="mapouter">
               <div class="gmap_canvas">
                 <iframe
@@ -440,7 +636,12 @@
               </style>
             </div>
           </div>
-          <div class="contact-form">
+          <div
+            class="contact-form"
+            data-aos="fade-left"
+            data-aos-duration="1300"
+            data-aos-delay="1400"
+          >
             <div class="contact-line">
               <img src="./assets/locate-svg.svg" alt="" /> Tầng 2, 319 - C16 Lý
               Thường Kiệt, Quận 11, TP. HCM
@@ -501,6 +702,13 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/swiper.js"></script>
+    <script src="./js/backtotop.js"></script>
+    <script src="./js/active.js"></script>
+    <script src="./js/hero.js"></script>
+    <script>
+      document.documentElement.scrollTop = 0;
+    </script>
   </body>
 </html>

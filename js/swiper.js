@@ -1,3 +1,4 @@
+AOS.init();
 var swiper = new Swiper(".mySwiper", {
   effect: "coverflow",
   loop: true,
